@@ -1,0 +1,159 @@
+<html>
+    <body>
+    <head>
+      <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+    </head>
+
+    <h1>Currency Converter</h1>
+
+    <form>
+
+     <div class="cont1">
+       <input type="text" class="quantity" id="quantity" placeholder="Quantity">
+
+       <select class="currencySelect" id="currencySelect">
+         <option value="USD">United States Dollar (US$)</option>
+         <option value="EUR">Euro (€)</option>
+         <option value="GBP">Pound Sterling (£)</option>
+         <option value="CHF">Swiss Franc (CHF)</option>
+         <option value="ILS">Israeli New Shekel (₪)</option>
+         <option value="MXN">Mexican Peso (MXN)</option>
+         <option value="BRL">Brazilian Real (R$)</option>
+         <option value="HKD">Hong Kong Dollar (HKD)</option>
+         <option value="JPY">Japanese Yen (¥)</option>
+       </select>
+
+     </div>
+
+     <p class="prgh"><b>Converted To</b></p>
+
+     <div class="cont2">
+
+       <select class="currencyConvert" id="currencyConvert">
+         <option value="USD">United States Dollar (US$)</option>
+         <option value="EUR">Euro (€)</option>
+         <option value="GBP">Pound Sterling (£)</option>
+         <option value="CHF">Swiss Franc (CHF)</option>
+         <option value="ILS">Israeli New Shekel (₪)</option>
+         <option value="MXN">Mexican Peso (MXN)</option>
+         <option value="BRL">Brazilian Real (R$)</option>
+         <option value="HKD">Hong Kong Dollar (HKD)</option>
+         <option value="JPY">Japanese Yen (¥)</option>
+       </select>
+
+     </div>
+
+     <input type="button" id="btn" class="button" value="Convert">
+     </form>
+
+     <div id="resultCont"></div>
+
+
+     </body>
+
+     <style>
+     /*  Color Gamma
+
+       rgb(5, 5, 50) = dark blue
+     	 rgb(0, 0, 128) = navy (blue)
+       rgb(0, 250, 154) = medium spring green
+
+     */
+
+       * {
+        box-sizing: border-box;
+    }
+
+       body {
+        font-family: 'Kanit', sans-serif;
+        background-color: rgb(5, 5, 50);
+        letter-spacing: -1px;
+        margin: 0;
+    }
+
+       h1 {
+        color: white;
+        text-align: center;
+        font-size: 45px;
+    }
+
+       form {
+        background-color: rgb(0, 0, 128);
+        color: white;
+        text-align: center;
+        width: 95%;
+        max-width: 500px;
+        margin: auto;
+        border-radius: 5px;
+        border: 5px solid white;
+    }
+
+
+        /* Classes */
+
+       .quantity {
+        text-align: center;
+        font-size: 30.5px;
+        border-radius: 3px;
+        border: none;
+        margin: 10.5px;
+        margin-top: 25px;
+        width: 50%;
+    }
+
+       .cont1 {
+        padding: 15px;
+        padding-bottom: 0.5px;
+    }
+
+       .cont2 {
+        padding: 15px;
+        padding-top: 0.5px;
+    }
+
+       .currencySelect, .currencyConvert {
+        font-size: 25px;
+        border-radius: 3.5px;
+    }
+
+       .prgh {
+        font-size: 27.5px;
+        padding: 1.5px;
+        letter-spacing: 0.5px;
+        font-style: bold;
+    }
+
+       .button {
+        font-family: 'Kanit', sans-serif;
+        background-color: rgb(0, 250, 154);
+        color: rgb(5, 5, 50);
+        font-size: 25.5px;
+        font-weight: bold;
+        margin: 25px;
+        margin-bottom: 20px;
+        padding: 5px;
+        padding-left: 25px;
+        padding-right: 25px;
+        letter-spacing: 0px;
+        border: none;
+        border-radius: 4.5px;
+        cursor: pointer;
+    }
+
+       .button:hover {
+        background-color: rgb(5, 5, 50);
+        color: rgb(250, 250, 250);
+    }
+
+       #resultCont {
+        color: white;
+        text-align: center;
+        font-size: 50px;
+        margin-top: 20px;
+        padding: 35px;
+    }
+
+     </style>
+
+     <script type="text/javascript" src="Currency_Converter.js"></script>
+</html>

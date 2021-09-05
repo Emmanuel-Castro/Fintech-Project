@@ -1,0 +1,211 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Finsoft</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+  	<h1 id="changeColor">Finsoft</h1>
+
+    <div id="sidebar">
+
+    	<div class="barBtn">
+    		<span>&#9776;</span>
+      </div>
+
+      <ul>
+    	  <li class="products"><a href="Products.html">Products</a></li>
+        <li class="banking"><a href="Internet_Banking.html">Internet Banking</a></li>
+    	  <li class="currency"><a href="Currency_Converter.html">Currency Converter</a></li>
+    	  <li class="savings"><a href="Savings_Calculator.html">Savings Calculator</a></li>
+    	  <li class="sign"><a href="Sign_Up_Process.html">Sign Up</a></li>
+      </ul>
+
+    </div>
+
+    <!--
+  	<div id="cont1" class="cont1"></div>
+  	<div id="cont2" class="cont2"></div>
+  	<div id="cont3" class="cont3"></div>
+  	<div id="cont4" class="cont4"></div>
+
+  	<footer>2020 Finsoft Inc. All rights reserved.</footer>
+    -->
+
+  </body>
+
+  <style>
+  /*  Color Gamma
+
+    rgb(5, 5, 50) = dark blue
+  	rgb(0, 0, 128) = navy (blue)
+    rgb(0, 250, 154) = medium spring green
+
+  */
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(5, 5, 50);
+  letter-spacing: -1px;
+  font-family: 'Kanit', sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-size: 45px;
+  color: rgb(250, 250, 250);
+  margin-bottom: 10px;
+}
+
+#sidebar {
+  position: fixed;
+  width: 200px;
+  height: 100%;
+  background-color: rgb(0, 250, 154);
+  left: -200px;
+  transition: all 100ms linear;
+}
+
+#sidebar ul li {
+  text-align: center;
+  padding: 15px 10px;
+  border-bottom: 1px solid rgb(0, 0, 128, 0.8);
+  list-style: none;
+}
+
+#sidebar ul li a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+#sidebar ul li a:hover {
+  color: rgb(250, 250, 250);
+}
+
+#sidebar li:hover {
+  background-color: rgb(0, 0, 128);
+  transition: all 150ms linear;
+}
+
+#sidebar.sbActive {
+  left: 0;
+}
+
+div.barBtn {
+  position: absolute;
+  left: 205px;
+  top: 1px;
+  cursor: pointer;
+  color: rgb(0, 250, 154);
+}
+
+div.barBtn span {
+  display: block;
+  width: 40px;
+  text-align: center;
+  font-size: 30px;
+  border: 1px solid rgb(0, 250, 154);
+  background-color: rgb(5, 5, 50);
+}
+
+div.cont1, div.cont2, div.cont3, div.cont4 {
+  width: 100%;
+  height: 200px;
+  background-color: rgb(0, 0, 128);
+  border: 2.5px solid rgb(0, 250, 154);
+  text-align: center;
+  margin: 10px 0px;
+}
+
+footer {
+  color: white;
+  letter-spacing: 0px;
+  font-weight: bold;
+}
+
+  </style>
+
+  <script type="text/javascript" src="Menu.js"></script>
+
+</html>
+
+<!--
+SIDEBAR CODE
+
+HTML
+<div id="sidebar">
+
+  <div class="barBtn">
+    <span>&#9776;</span>
+  </div>
+
+  <ul>
+    <li>Menu</li>
+	  <li>Products</li>
+    <li>Currency Converter</li>
+    <li>Savings Calculator</li>
+    <li>Sign Up</li>
+    <li>About</li>
+  </ul>
+
+</div>
+
+CSS
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#sidebar {
+  position: fixed;
+  width: 200px;
+  height: 100%;
+  background-color: rgb(0, 250, 154);
+  left: -200px;
+  transition: all 500ms linear;
+}
+
+#sidebar.sbActive {
+  left: 0;
+}
+
+div.barBtn {
+  position: absolute;
+  left: 230px;
+  top: 10px;
+  cursor: pointer;
+}
+
+div.barBtn span {
+  display: block;
+  width: 40px;
+  text-align: center;
+  font-size: 30px;
+  border: 1px solid rgb(0, 0, 0);
+}
+
+#sidebar ul li {
+  text-align: center;
+  padding: 15px 10px;
+  border-bottom: 1px solid rgb(5, 5, 50, 0.3);
+  list-style: none;
+}
+
+#sidebar ul li a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+JS
+const sidebarBtn = document.querySelector('.barBtn');
+
+sidebarBtn.addEventListener('click', function() {
+  document.getElementById('sidebar').classList.toggle('sbActive');
+});
+-->

@@ -4,8 +4,8 @@ sidebarBtn.addEventListener('click', function() {
   document.getElementById('sidebar').classList.toggle('sbActive');
 });
 
-let titleColor = document.getElementById('changeColor');
+const message = document.getElementById('calc');
 
-titleColor.addEventListener("click", function() {
-  document.querySelector('h1').style.color = 'green';
+message.addEventListener("click", function() {
+  window.alert('Coming Soon');
 });

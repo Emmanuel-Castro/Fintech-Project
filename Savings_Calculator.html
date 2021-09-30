@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>Savings Calculator</title>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Savings_Calculator.css">
   </head>
 
   <body>
@@ -13,15 +14,13 @@
 
 	<form>
 
-    <div class="amountEdit">
-		  <input type="text" id="amount" placeholder="Estimated Amount">
-	  </div>
+	  <input type="text" class="amountInput" id="amount" placeholder="Estimated Amount">
+    <br>
 
-    <div class="timeEdit">
-		  <input type="text" id="time" placeholder="Estimated Time in years" title="Estimated Time in years">
-	  </div>
+		 <input type="text" class="timeInput" id="time" placeholder="Estimated Years">
+     <br>
 
-		<input type="button" id="btn" class="btn" value="Send" onclick="calculateSavings();">
+		 <input type="button" class="btn" id="btn" value="Send" onclick="calculateSavings();">
 
    </form>
 
@@ -29,73 +28,6 @@
 
   </body>
 
-</html>
-
-  <style>
-
-  * {
-    margin: 0;
-    padding: 0;
-  }
-
-  body {
-    background-color: rgb(5, 5, 50);
-  }
-
-  h1 {
-    color: rgb(250, 250, 250);
-    margin: 10px;
-    text-align: center;
-  }
-
-  form {
-    text-align: center;
-    margin: auto;
-    background-color: rgb(0, 0, 128);
-    border: 2.5px solid rgb(250, 250, 250);
-    border-radius: 5px;
-    width: 95%;
-    max-width: 500px;
-  }
-
-  input {
-    font-size: 20px;
-    padding: 10px 0.5px;
-    border: none;
-    border-radius: 2.5px;
-    text-align: center;
-  }
-
-  input.btn {
-    background-color: rgb(0, 250, 154);
-    color: rgb(5, 5, 50);
-    margin: 25px;
-    padding: 10px 35px;
-    font-size: 20px;
-    border: none;
-    border-radius: 5px;
-  }
-
-  input.btn:hover {
-    background-color: rgb(5, 5, 50);
-    color: rgb(250, 250, 250);
-  }
-
-  div.amountEdit, div.timeEdit {
-    color: rgb(250, 250, 250);
-    padding: 20px;
-    margin: 5px;
-  }
-
-  div.cont {
-    color: rgb(250, 250, 250);
-    margin: 25px;
-  }
-
-  </style>
-
   <script src="Savings_Calculator.js"></script>
 
-
-<!--
--->
+</html>

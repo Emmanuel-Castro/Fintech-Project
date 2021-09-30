@@ -1,16 +1,16 @@
 
-let getAmount, getTime;
-
-getAmount = document.getElementById('amount');
-getTime = document.getElementById('time');
+let getAmount = document.getElementById('amount');
+let getTime = document.getElementById('time');
 
 function calculateSavings(amount, time) {
 
-  let months = (parseInt(time) * 12);
+  let parseAmount = parseInt(amount);
+  let parseTime = parseInt(time);
 
-  let calresult = amount/months;
+  let months = (parseTime * 12);
+  let calresult = parseAmount/months;
 
-  let message = `Estimated Amount: $${amount} <br> Estimated Time: ${months}
+  let message = `Estimated Amount: $${parseAmount} <br> Estimated Time: ${months}
   months <br> Monthly Quote: $${calresult}`;
 
   document.getElementById('cont').innerHTML = message;

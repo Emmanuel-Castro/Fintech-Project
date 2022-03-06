@@ -12,6 +12,7 @@
 
     <a href="Internet_Banking.html" class="intblink"><button class="banking">Internet Banking</button></a>
 
+    <!-- SIDEBAR ESTRUCTURE -->
     <div id="sidebar">
 
       <!-- SIDEBAR BUTTON -->
@@ -30,87 +31,41 @@
 
     </div>
 
-    <!--
-  	<footer>2020 Finsoft Inc. All rights reserved.</footer>
-    -->
+    <!-- BLOCK STRUCTURE -->
+    <div class="personalCardBlock" id="personal">
+      <article>
+        <p class="personalmsg">
+          The Personal Card
+          <br>
+          The tool to improve your personal finances.
+        </p>
+      </article>
+    </div>
+
+    <div class="businessCardBlock" id="business">
+      <article>
+        <p class="businessmsg">
+         The Business Card
+         <br>
+         The key to the financial success for your business.
+        </p>
+      </article>
+    </div>
+
+    <div class="internetBankingBlock" id="internet">
+      <article>
+        <p class="internetmsg">
+         Internet Banking
+         <br>
+         Our way to manage effectively your operations.
+        </p>
+      </article>
+    </div>
+
+  	<footer>2022 Finsoft Inc. All rights reserved.</footer>
 
   </body>
 
   <script type="text/javascript" src="Menu.js"></script>
 
 </html>
-
-<!--
-SIDEBAR CODE
-
-HTML
-<div id="sidebar">
-
-  <div class="barBtn">
-    <span>&#9776;</span>
-  </div>
-
-  <ul>
-    <li>Menu</li>
-	  <li>Products</li>
-    <li>Currency Converter</li>
-    <li>Savings Calculator</li>
-    <li>Sign Up</li>
-    <li>About</li>
-  </ul>
-
-</div>
-
-CSS
-* {
-  margin: 0;
-  padding: 0;
-}
-
-#sidebar {
-  position: fixed;
-  width: 200px;
-  height: 100%;
-  background-color: rgb(0, 250, 154);
-  left: -200px;
-  transition: all 500ms linear;
-}
-
-#sidebar.sbActive {
-  left: 0;
-}
-
-div.barBtn {
-  position: absolute;
-  left: 230px;
-  top: 10px;
-  cursor: pointer;
-}
-
-div.barBtn span {
-  display: block;
-  width: 40px;
-  text-align: center;
-  font-size: 30px;
-  border: 1px solid rgb(0, 0, 0);
-}
-
-#sidebar ul li {
-  text-align: center;
-  padding: 15px 10px;
-  border-bottom: 1px solid rgb(5, 5, 50, 0.3);
-  list-style: none;
-}
-
-#sidebar ul li a {
-  text-decoration: none;
-  color: rgb(0, 0, 0);
-}
-
-JS
-const sidebarBtn = document.querySelector('.barBtn');
-
-sidebarBtn.addEventListener('click', function() {
-  document.getElementById('sidebar').classList.toggle('sbActive');
-});
--->

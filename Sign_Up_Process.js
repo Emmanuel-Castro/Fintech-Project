@@ -1,17 +1,19 @@
 
 let getFirstName = document.getElementById('firstName');
 let getLastName = document.getElementById('lastName');
-let getCardID = document.getElementById('card');
-let getBankCode = document.getElementById('code');
+let getPhoneCode = document.getElementById('phoneCode');
+let getCurrencyAccount = document.getElementById('currencyAccount');
 
 
-function getFormData() {
+document.getElementById('btn').addEventListener("click", function() {
 
-  let dataResult = `First Name: ${getFirstName.value.toUpperCase()} <br> Last Name: ${getLastName.value.toUpperCase()}
-  <br> Card Number: ${getCardID.value} <br> Bank Code: ${getBankCode.value} <br>`;
+  let dataResult = `
+  First Name: ${getFirstName.value.toUpperCase()}
+  Last Name: ${getLastName.value.toUpperCase()}
+  Phone Code: ${getPhoneCode.value}
+  Account: ${getCurrencyAccount.value}`;
 
-  document.getElementById('resultCont').innerHTML = dataResult;
+  window.alert('Data Completed');
+  console.log(dataResult);
 
-}
-
-document.getElementById('btn').addEventListener("click", getFormData);
+});

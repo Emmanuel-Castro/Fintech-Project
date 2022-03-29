@@ -3,6 +3,7 @@
     <meta charset="utf-8">
     <title>Sign Up</title>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Sign_Up_Process.css">
   </head>
   <body>
 
@@ -14,9 +15,27 @@
 
       <input type="text" id="firstName" placeholder="First Name" required>
       <input type="text" id="lastName" placeholder="Last Name" required>
-      <input type="text" id="card" placeholder="Card ID" required>
-      <input type="text" id="code" placeholder="Bank Code" required>
 
+      <select class="phoneSelector" id="phoneCode" required>
+        <option id="us">(+1) United States</option>
+        <option id="ca">(+1) Canada</option>
+        <option id="do">(+1-809) Dominican Republic</option>
+        <option id="mx">(+52) Mexico</option>
+        <option id="br">(+55) Brazil</option>
+        <option id="ar">(+54) Argentina</option>
+        <option id="cl">(+56) Chile</option>
+        <option id="co">(+57) Colombia</option>
+        <option id="pe">(+51) Peru</option>
+        <option id="pa">(+507) Panama</option>
+      </select>
+
+      <select class="accountSelector" id="currencyAccount" required>
+        <option id="DOP">Dominican Peso</option>
+        <option id="USD">US Dollar</option>
+        <option id="EUR">Euro</option>
+      </select>
+
+      <!-- BUTTONS -->
       <div class="btnCont">
         <input type="button" id="btn" value="Send" class="button">
         <input type="reset" value="Reset" class="reset">
@@ -24,106 +43,7 @@
 
     </form>
 
-    <br>
-    <br>
-
-    <div id="resultCont"></div>
   </body>
-
-  <style>
-  /*  Color Gamma
-    rgb(5, 5, 50) = dark blue
-    rgb(0, 0, 128) = navy blue
-    rgb(0, 250, 154) = medium spring green
-    rgb(255, 255, 255) = white
-    rgb(0, 0, 0) = black
-  */
-
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Kanit', sans-serif;
-      background-color: rgb(5, 5, 50);
-      background-size: 100vw, 100vh;
-      background-attachment: fixed;
-      letter-spacing: -1px;
-      margin: 0;
-    }
-
-    h1 {
-      letter-spacing: 1px;
-      text-align: center;
-      font-size: 45px;
-      color: white;
-    }
-
-    h2 {
-      background-color: rgb(0, 250, 154);
-      color: rgb(5, 5, 50);
-      font-size: 32px;
-      text-align: center;
-      padding: 5.5px;
-      border-top-left-radius: 5px;
-      border-top-right-radius: 5px;
-    }
-
-    form {
-      background-color: rgb(0, 0, 128);
-      text-align: center;
-      width: 95%;
-      max-width: 500px;
-      margin: auto;
-      border-radius: 5px;
-
-    }
-
-    input {
-      font-size: 20px;
-      margin-bottom: 5px;
-      border-radius: 3px;
-      border: none;
-      padding: 5px;
-      margin: 10.5px;
-    }
-
-    input.button, input.reset {
-      font-family: 'Kanit', sans-serif;
-      background-color: rgb(0, 250, 154);
-      text-align: center;
-      color: rgb(5, 5, 50);
-      letter-spacing: 0px;
-      font-weight: bold;
-      font-size: 20.5px;
-      padding: 10px;
-      border-radius: 4px;
-      border: none;
-      cursor: pointer;
-    }
-
-    input.button:hover {
-      background-color: rgb(5, 5, 50);
-      color: rgb(255, 255, 255);
-    }
-
-    input.reset:hover {
-      background-color: rgb(5, 5, 50);
-      color: rgb(255, 255, 255);
-    }
-
-    div {
-      color: white;
-      font-size: 25px;
-      font-weight: 15px;
-      text-align: center;
-    }
-
-    div.btnCont {
-      margin: 20px;
-    }
-
-  </style>
 
   <script type="text/javascript" src="Sign_Up_Process.js"></script>
 </html>

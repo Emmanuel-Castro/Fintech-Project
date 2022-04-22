@@ -1,9 +1,9 @@
 /*  Color Gamma
-
   rgb(5, 5, 50) = dark blue
   rgb(0, 0, 128) = navy (blue)
   rgb(0, 250, 154) = medium spring green
-
+  rgb(255, 255, 255) = white
+  rgb(0, 0, 0) = black
 */
 
 * {
@@ -28,24 +28,48 @@ h1 {
 }
 
 form {
-  text-align: center;
+  width: 95%;
+  max-width: 500px;
   background-color: rgb(0, 0, 128);
+  text-align: center;
+  margin: auto;
   border-radius: 5px;
-  padding: 35px;
-  margin-left: 300px;
-  margin-right: 300px;
+}
+
+div.bankID {
+  padding-top: 15px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+div.securityCode {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+p {
+  color: rgb(255, 255, 255);
+  font-size: 25px;
 }
 
 input {
-  font-size: 15px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0px;
   padding: 10px;
-  margin-bottom: 20px;
+  width: 15%;
   border: none;
   border-style: none;
   border-radius: 3px;
 }
 
+input.bnkInput, input.secInput {
+  letter-spacing: 8px;
+}
+
 input.fmButton {
+  width: 25%;
   text-align: center;
   background-color: rgb(0, 250, 154);
   color: rgb(5, 5, 50);
@@ -54,11 +78,8 @@ input.fmButton {
   font-weight: bold;
   letter-spacing: 0px;
   padding: 5px;
-  padding-left: 25px;
-  padding-right: 25px;
-  margin-top: 45px;
-  margin-bottom: 5px;
   border-radius: 4px;
+  margin-bottom: 20px;
   border: none;
   cursor: pointer;
 }

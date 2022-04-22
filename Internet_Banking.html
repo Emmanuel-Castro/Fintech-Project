@@ -13,15 +13,23 @@
 
   <form class="fm" action="index.html">
 
-    <input type="text" placeholder="Bank ID">
+    <div class="bankID">
+      <p>Bank ID</p>
+      <input type="text" id="bnkInput" class="bnkInput">
+    </div>
+
+    <div class="securityCode">
+      <p>Security Code</p>
+      <input type="password" id="secInput" class="secInput">
+    </div>
+
     <br>
-    <input type="password" placeholder="Security Code">
-    <br>
-    <input type="button" class="fmButton" value="Access">
+
+    <input type="button" id="fmBtn" class="fmButton" value="Access">
 
   </form>
 
-
-
   </body>
+
+  <script type="text/javascript" src="Internet_Banking.js"></script>
 </html>

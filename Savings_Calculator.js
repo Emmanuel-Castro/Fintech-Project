@@ -2,23 +2,18 @@
 let getAmount = document.getElementById('amount');
 let getTime = document.getElementById('time');
 
-function calculateSavings(amount, time) {
+document.getElementById('btn').addEventListener("click", function() {
 
-  let parseAmount = parseInt(amount);
-  let parseTime = parseInt(time);
+  let parseAmount = parseInt(getAmount.value);
+  let parseTime = parseInt(getTime.value);
 
   let months = (parseTime * 12);
   let calresult = parseAmount/months;
 
-  let message = `Estimated Amount: $${parseAmount} <br> Estimated Time: ${months}
-  months <br> Monthly Quote: $${calresult}`;
+  let message = `
+  Estimated Amount: ${parseAmount}
+  Estimated Time: ${months} months
+  Monthly Quote: ${calresult.toFixed(2)}`;
 
-  document.getElementById('cont').innerHTML = message;
-}
-
-
-document.getElementById('btn').addEventListener("click", function() {
-
-  document.getElementById('cont').innerHTML = calculateSavings(getAmount.value, getTime.value).toFixed(2);
-
+  console.log(message);
 });

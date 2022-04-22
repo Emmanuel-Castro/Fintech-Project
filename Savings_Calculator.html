@@ -14,17 +14,19 @@
 
 	<form>
 
-	  <input type="text" class="amountInput" id="amount" placeholder="Estimated Amount">
-    <br>
+    <div class="amountBlock">
+      <p>Amount</p>
+	    <input type="text" class="amountInput" id="amount">
+    </div>
 
-		 <input type="text" class="timeInput" id="time" placeholder="Estimated Years">
-     <br>
+    <div class="timeBlock">
+      <p>Time (Yrs)</p>
+		  <input type="text" class="timeInput" id="time">
+    </div>
 
-		 <input type="button" class="btn" id="btn" value="Send" onclick="calculateSavings();">
+		 <input type="button" class="btn" id="btn" value="Send">
 
    </form>
-
-	 <div id="cont" class="cont"></div>
 
   </body>
 
